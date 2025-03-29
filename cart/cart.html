@@ -3,13 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link rel="stylesheet" href="cart-style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart-style.css">
+
 </head>
 <body>
+
+    <div class="box-content">
+        <header class="header center">
+           <div class="header__left">
+               <a href="index.html" class="header__logo"><img src="../img/logo.png" alt="logo"></a>
+               <a href="index.html" class="header__search"><img src="../img/search.svg" alt="search"></a>
+           </div>
+           <div class="header__right">
+               <label for="check"><img src="../img/menu.svg" alt="burger-menu"></label>
+               <input id="check" type="checkbox">
+               <nav class="mobile-menu">
+                   <div class="mobile-menu__link-site"></div>
+                   <h3 class="mobile-menu__heading">MENU</h3>
+                   <div class="mobile-menu__box">
+                       <div class="mobile-menu__item">
+                           <a href="#" class="mobile-menu__title">MAN</a>
+                           <ul class="mobile-menu__list">
+                               <li><a class="mobile-menu__link" href="#">Accessories</a></li>
+                               <li><a class="mobile-menu__link" href="#">Bags</a></li>
+                               <li><a class="mobile-menu__link" href="#">Denim</a></li>
+                               <li><a class="mobile-menu__link" href="#">T-Shirts</a></li>
+                           </ul>
+                       </div>
+                       <div class="mobile-menu__item">
+                           <a href="#" class="mobile-menu__title">WOMAN</a>
+                           <ul class="mobile-menu__list">
+                               <li><a class="mobile-menu__link" href="">Accessories</a></li>
+                               <li><a class="mobile-menu__link" href="">Bags</a></li>
+                               <li><a class="mobile-menu__link" href="">Denim</a></li>
+                               <li><a class="mobile-menu__link" href="">T-Shirts</a></li>
+                           </ul>
+                       </div>
+                       <div class="mobile-menu__item">
+                           <a href="#" class="mobile-menu__title">KIDS</a>
+                           <ul class="mobile-menu__list">
+                               <li><a class="mobile-menu__link" href="">Accessories</a></li>
+                               <li><a class="mobile-menu__link" href="">Bags</a></li>
+                               <li><a class="mobile-menu__link" href="">Denim</a></li>
+                               <li><a class="mobile-menu__link" href="">T-Shirts</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </nav>
+               <a href="#"><img class="header__img_lk" src="../img/lk.svg" alt="person account"></a>
+       <a href="#"><div class="header__right_five">5</div>
+           <img class="header__img_basket" src="../img/basket.svg" alt="basket"></a>
+       </div>
+       </section>
+           
+       </header>
+   </div>
+
 
     <div class="breadcrumb center">
         <h2 class="breadcrumb__heading">SHOPPING CART</h2>
@@ -17,7 +71,7 @@
     <div class="cart center">
         <div class="cart__content">
             <div class="cart-item">
-                <img src="./img/cart_2.jpeg" alt="product 1" class="cart-item__photo">
+                <img src="../img/content3.jpg" alt="product 1" class="cart-item__photo">
                 <div class="cart-item__content">
                     <a href="#" class="cart-item__link">MANGO PEOPLE T-SHIRT</a>
                     <div class="cart-item__info">
@@ -27,9 +81,6 @@
                         <p class="cart-item__text cart-item__text_quantity">Quantity: <input class="cart-item__number" type="number" value="2"></p>
                     </div>
                     <a href="" class="cart-item__close"><svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <desc>
-                                Created with Pixso.
-                        </desc>
                         <defs/>
                         <path id="Vector" d="M11.24 9L17.53 2.71C17.82 2.41 17.99 2.01 17.99 1.59C17.99 1.17 17.82 0.76 17.53 0.46C17.23 0.16 16.83 0 16.4 0C15.98 0 15.58 0.16 15.28 0.46L9 6.75L2.71 0.46C2.41 0.16 2.01 0 1.59 0C1.16 0 0.76 0.16 0.46 0.46C0.16 0.76 0 1.16 0 1.59C0 2.01 0.16 2.41 0.46 2.71L6.75 9L0.46 15.28C0.16 15.58 0 15.98 0 16.4C0 16.83 0.16 17.23 0.46 17.53C0.76 17.83 1.16 18 1.59 18C2.01 18 2.41 17.83 2.71 17.53L9 11.24L15.28 17.53C15.58 17.83 15.98 18 16.4 18C16.83 18 17.23 17.83 17.53 17.53C17.83 17.23 18 16.83 18 16.4C18 15.98 17.83 15.58 17.53 15.28L11.24 9Z" fill="#575757" fill-opacity="1.000000" fill-rule="nonzero"/>
                     </svg>
@@ -37,7 +88,7 @@
                 </div>
             </div>
             <div class="cart-item">
-                <img src="./img/cart_1.jpeg" alt="product 2" class="cart-item__photo">
+                <img src="../img/content7.jpg" alt="product 2" class="cart-item__photo">
                 <div class="cart-item__content">
                     <a href="#" class="cart-item__link">MANGO PEOPLE T-SHIRT</a>
                     <div class="cart-item__info">
@@ -47,27 +98,72 @@
                         <p class="cart-item__text cart-item__text_quantity">Quantity: <input class="cart-item__number" type="number" value="2"></p>
                     </div>
                     <a href="" class="cart-item__close"><svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <desc>
-                                Created with Pixso.
-                        </desc>
                         <defs/>
                         <path id="Vector" d="M11.24 9L17.53 2.71C17.82 2.41 17.99 2.01 17.99 1.59C17.99 1.17 17.82 0.76 17.53 0.46C17.23 0.16 16.83 0 16.4 0C15.98 0 15.58 0.16 15.28 0.46L9 6.75L2.71 0.46C2.41 0.16 2.01 0 1.59 0C1.16 0 0.76 0.16 0.46 0.46C0.16 0.76 0 1.16 0 1.59C0 2.01 0.16 2.41 0.46 2.71L6.75 9L0.46 15.28C0.16 15.58 0 15.98 0 16.4C0 16.83 0.16 17.23 0.46 17.53C0.76 17.83 1.16 18 1.59 18C2.01 18 2.41 17.83 2.71 17.53L9 11.24L15.28 17.53C15.58 17.83 15.98 18 16.4 18C16.83 18 17.23 17.83 17.53 17.53C17.83 17.23 18 16.83 18 16.4C18 15.98 17.83 15.58 17.53 15.28L11.24 9Z" fill="#575757" fill-opacity="1.000000" fill-rule="nonzero"/>
                     </svg>
                     </a>
                 </div>
             </div>
+            <div class="cart__buttons">
+                <button class="cart__buttons_btn">CLEAR SHOPPING CART</button>
+                <button class="cart__buttons_btn">CONTINUE SHOPPING</button>
+            </div>
         </div>
-        <div class="cart__address">
-            <h2 class="cart__heading">SHIPPING ADRESS</h2>
-            <form action="#" class="cart__form">
-                <input class="cart__input" type="text" placeholder="Bangladesh">
-                <input class="cart__input" type="text" placeholder="State">
-                <input class="cart__input" type="text" placeholder="Postcode / Zip">
-                <button class="cart__button">GET A QUOTE</button>
-            </form>
+        <div class="cart__info">
+            <div class="cart__address">
+                <h2 class="cart__heading">SHIPPING ADRESS</h2>
+                <form action="#" class="cart__form">
+                    <input class="cart__input" type="text" placeholder="Bangladesh">
+                    <input class="cart__input" type="text" placeholder="State">
+                    <input class="cart__input" type="text" placeholder="Postcode / Zip">
+                    <button class="cart__button">GET A QUOTE</button>
+                </form>
+            </div>
+            <div class="cart__total">
+                <div class="cart__total_info">
+                    <p class="cart__subtotal">SUB TOTAL         $900</h2>
+                    <p class="cart__grandtotal">GRAND TOTAL <span class="cart__grandtotal_price">$900</span></p>
+                    <svg width="275.000000" height="1.000000" viewBox="0 0 275 1" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs/>
+                        <path id="Shape 8" d="M0 0L275 0L275 1L0 1L0 0Z" fill="#E2E2E2" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </svg>
+                </div>
+                <button class="cart__total_btn">PROCEED TO CHECKOUT</button>            
+            </div>
         </div>
     </div>
 
+
+    <section class="frame7 center">
+        <div class="subscribe__info">
+          <img src="../img/expert.png" alt="" />
+          <div class="subscribe__text">
+            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+          </div>
+        </div>
+        <div class="subscribe">
+        <div class="subscribe__text_right">
+          <h1>SUBSCRIBE</h1>
+            FOR OUR NEWLETTER AND PROMOTION
+        </div>
+        <div class="subscribe__button_right">
+          <input type="email" id="user-email" name="email" placeholder="   Enter Your Email" />
+          <button class="subscribe__button_left">Subscribe</button>
+        </div>
+        </div>
+      </section>
+        
+      <footer class="copyright center">
+        <div class="copyright__left">© 2023 Brand All Rights Reserved.</div>
+        <nav class="copyright__right">
+          <div class="social__icon">
+            <a href="#"><img src="../img/pinterest.svg" alt="pinterest" /></a>
+          </div>
+          <div class="social__icon">
+            <a href="#"><img src="../img/twitter.svg" alt="twitter" /></a>
+          </div>
+        </nav>
+      </footer>
     
 
 </body>
