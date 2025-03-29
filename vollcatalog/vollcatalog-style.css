@@ -26,40 +26,59 @@ a {
 }
 
 .header {
-  background-color: #222;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background: rgb(34, 34, 34);
   display: flex;
-  align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-content: center;
   justify-content: space-between;
-  position: relative;
+  align-items: center;
+  height: 75px;
 }
 .header__left {
   display: flex;
-  align-items: center;
   gap: 41px;
+  padding-bottom: 20px;
+  padding-top: 28px;
 }
-
-#burger {
+.header__right {
+  display: flex;
+  gap: 33px;
+  padding-bottom: 20px;
+  padding-top: 26px;
+}
+.header__right_five {
+  height: 19px;
+  width: 19px;
+  background: rgb(241, 109, 127);
+  color: white;
+  border-radius: 50%;
   position: absolute;
-  left: -999999px;
-  visibility: hidden;
+  margin-left: 25px;
+  margin-top: -7px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
 }
-#burger:checked ~ .nav {
-  right: -232px;
+.header__logo {
+  padding-bottom: 19px;
+  padding-top: 18px;
+}
+.header__search {
+  padding-top: 22px;
 }
 
 .mobile-menu {
   position: absolute;
-  width: 232px;
-  top: 75px;
-  right: 0;
-  padding: 32px;
-  box-sizing: border-box;
-  transition: right 0.3s;
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 232px;
+  padding: 32px;
+  box-sizing: border-box;
+  top: 75px;
+  right: 0;
+  transition: right 0.3s;
 }
 .mobile-menu__heading {
   font-style: normal;
@@ -70,6 +89,7 @@ a {
   margin-bottom: 4px;
 }
 .mobile-menu__title {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -97,20 +117,17 @@ a {
   padding-left: 20px;
 }
 
-.box-content {
-  overflow: hidden;
+#check {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}
+#check:checked ~ .mobile-menu {
+  right: -232px;
 }
 
-.nav {
-  background: #FFFFFF;
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  width: 232px;
-  padding: 32px;
-  box-sizing: border-box;
-  position: absolute;
-  top: 80px;
-  right: 0;
-  transition: right 0.3s;
+.box-content {
+  overflow: hidden;
 }
 
 .top-head {
@@ -397,7 +414,6 @@ a {
   padding-top: 103px;
   padding-bottom: 104px;
 }
-
 .feature__block {
   width: 360px;
   display: grid;
@@ -405,12 +421,10 @@ a {
   justify-content: center;
   align-items: center;
 }
-
 .feature__block a {
   padding-left: 158px;
   padding-bottom: 28px;
 }
-
 .feature__heading {
   font-style: normal;
   font-weight: 400;
@@ -420,7 +434,6 @@ a {
   text-align: center;
   padding-bottom: 16px;
 }
-
 .feature__text {
   font-style: normal;
   font-weight: 300;
