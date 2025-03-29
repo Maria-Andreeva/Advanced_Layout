@@ -16,7 +16,7 @@ a {
   padding-right: calc(50% - 570px);
 }
 
-.top {
+.box-content {
   overflow: hidden;
 }
 
@@ -26,15 +26,9 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-around;
-  align-items: center;
-  height: 75px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  background: #222222;
+  align-items: center;
   height: 75px;
-  position: relative;
 }
 .header__left {
   display: flex;
@@ -66,27 +60,23 @@ a {
   padding-bottom: 19px;
   padding-top: 18px;
 }
-.header__checkbox {
-  position: absolute;
-  visibility: hidden;
-  left: -999999px;
-}
-.header__checkbox:checked ~ .mobile-menu {
-  right: 0;
+.header__search {
+  padding-top: 22px;
 }
 
-.menu {
+.mobile-menu {
   position: absolute;
-  width: 232px;
-  top: 75px;
-  right: 0;
-  padding: 32px;
-  box-sizing: border-box;
-  transition: right 0.3s;
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 232px;
+  padding: 32px;
+  box-sizing: border-box;
+  top: 75px;
+  right: 0;
+  transition: right 0.3s;
+  z-index: 2;
 }
-.menu__heading {
+.mobile-menu__heading {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -94,7 +84,8 @@ a {
   color: #000000;
   margin-bottom: 4px;
 }
-.menu__subheading {
+.mobile-menu__title {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -103,7 +94,7 @@ a {
   margin-bottom: 12px;
   margin-top: 20px;
 }
-.menu__link {
+.mobile-menu__link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -111,10 +102,10 @@ a {
   color: #6F6E6E;
   text-decoration: none;
 }
-.menu__link:hover {
+.mobile-menu__link:hover {
   color: #F16D7F;
 }
-.menu__ul {
+.mobile-menu__list {
   display: flex;
   flex-direction: column;
   gap: 11px;
@@ -127,8 +118,7 @@ a {
   left: -999999px;
   visibility: hidden;
 }
-
-#check:checked ~ .menu {
+#check:checked ~ .mobile-menu {
   right: -232px;
 }
 
@@ -563,4 +553,4 @@ a {
 
 .social__icon img:hover {
   filter: invert(100%);
-}/*# sourceMappingURL=catalog-style.css.map */
+}/*# sourceMappingURL=product-style.css.map */
