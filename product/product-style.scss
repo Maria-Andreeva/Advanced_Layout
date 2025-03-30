@@ -76,7 +76,7 @@ a {
     }
   }
   
-  .mobile-menu {
+.mobile-menu {
     position: fixed; 
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -620,6 +620,8 @@ body.menu-open {
             padding-bottom: 18px;
         }
     }
+
+  
     .breadcrumb {
         padding-left: 16px;
         padding-right: 16px;
