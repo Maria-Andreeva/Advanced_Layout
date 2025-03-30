@@ -126,10 +126,6 @@ body.menu-open {
   overflow-x: hidden;
 }
 
-.box-content {
-  overflow: hidden;
-}
-
 .breadcrumb {
   background: #F8F3F4;
   height: 148px;
@@ -596,9 +592,6 @@ body.menu-open {
   }
 }
 @media (max-width: 767px) {
-  body, .container {
-    overflow-x: hidden;
-  }
   .center {
     max-width: 100%;
     padding-left: 16px;

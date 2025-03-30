@@ -743,9 +743,6 @@ body.menu-open {
   }
 }
 @media (max-width: 767px) {
-  body, .container {
-      overflow-x: hidden;
-  }
 
   .center {
       max-width: 100%;

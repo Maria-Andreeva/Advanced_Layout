@@ -130,9 +130,7 @@ body.menu-open {
     overflow-x: hidden;
 }
   
-.box-content {
-    overflow: hidden;
-}
+
 
 .breadcrumb {
     background: #F8F3F4;
@@ -581,7 +579,6 @@ body.menu-open {
         }
     }
 
-
     .frame7 {
         height: 693px;
         display: flex;
@@ -631,9 +628,6 @@ body.menu-open {
     }
 }
 @media (max-width: 767px) {
-    body, .container {
-        overflow-x: hidden;
-    }
   
     .center {
         max-width: 100%;
