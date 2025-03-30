@@ -628,6 +628,10 @@ body.menu-open {
     }
 }
 @media (max-width: 767px) {
+
+    .box-content {
+        overflow: hidden;
+    }
   
     .center {
         max-width: 100%;
@@ -675,10 +679,48 @@ body.menu-open {
         padding-bottom: 69px;
     }
 
+    .tablet-only {
+        display: flex !important;
+    }
 
-
-
-  
+    .registration {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 40px;
+        &__left {
+            &_input {
+                width: 100%;
+                max-width: 359px;
+                padding-left: 17px;
+                padding-right: 17px;
+            }
+            &_info {
+                width: 100%;
+                max-width: 358px;
+            }
+        }
+        &__btn {
+            gap: 20px; 
+        }
+        &__right {
+            &_heading {
+                font-size: 16px;
+                line-height: 19px;
+                padding-bottom: 32px;
+            }
+            &_info {
+                font-size: 16px;
+                line-height: 19px;
+                padding-bottom: 22px;
+            }
+            &_ul {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+ 
   
     .frame7 {
         display: flex;
@@ -686,10 +728,13 @@ body.menu-open {
         justify-content: center;
         align-items: center;
         height: 550px;
+        width: 100%;
+        min-width: 320px;
     }
     .subscribe {
           height: 123px;
-          width: 100%;
+          width: 80%;
+          max-width: 300px;
           padding-top: 30px;
           padding-bottom: 109px;
           &__info {  
@@ -698,7 +743,7 @@ body.menu-open {
               align-items: center; 
               justify-content: center;
               width: 100%;
-              max-width: 500px; 
+              max-width: 350px; 
               padding: 20px;
               margin: 0 auto;
               text-align: center;
