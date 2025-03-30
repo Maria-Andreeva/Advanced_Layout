@@ -75,17 +75,16 @@ a {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   width: 232px;
   padding: 32px;
   box-sizing: border-box;
   top: 75px;
-  /*right: 0;*/
-  right: 100%;
-  transition: right 0.3s;
-  z-index: 2;
+  right: -232px;
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
 }
 .mobile-menu__heading {
   font-style: normal;
@@ -130,8 +129,11 @@ a {
   visibility: hidden;
 }
 #check:checked ~ .mobile-menu {
-  /*right: -$widthBurgerMenu;*/
-  right: 0px;
+  right: 0;
+}
+
+body.menu-open {
+  overflow-x: hidden;
 }
 
 .breadcrumb {
