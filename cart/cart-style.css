@@ -685,12 +685,124 @@ body.menu-open {
     padding-bottom: 26px;
     padding-top: 25px;
   }
-  .breadcrumb__links {
+  .breadcrumb {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 69px;
   }
-  .breadcrumb__box:not(:last-child)::after {
-    padding-left: 6px;
-    padding-right: 6px;
+  .cart {
+    padding-top: 39px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cart__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding-top: 0;
+  }
+  .cart__address {
+    margin-bottom: 0px;
+  }
+  .cart__input {
+    height: 45px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .cart__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 30px;
+    margin-bottom: 48px;
+    padding: 9px 18px;
+  }
+  .cart__buttons_btn {
+    width: 175px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+    text-transform: lowercase;
+  }
+  .cart__buttons_btn::first-letter {
+    text-transform: uppercase;
+  }
+  .cart__total {
+    position: relative;
+    margin-left: 9px;
+    margin-right: 6px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .cart__total_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .cart-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    height: 188px;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  }
+  .cart-item__link {
+    padding-left: 17px;
+    width: 140px;
+    color: rgb(34, 34, 34);
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    padding-top: 13px;
+    padding-bottom: 25px;
+    margin: 0;
+  }
+  .cart-item__photo {
+    width: 50%;
+    height: auto;
+  }
+  .cart-item__content {
+    width: 358px;
+    height: 188px;
+    padding: 0;
+  }
+  .cart-item__text {
+    padding-left: 17px;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .cart-item__text__quantity {
+    gap: 16px;
+    padding-bottom: 38px;
+  }
+  .cart-item__number {
+    width: 24px;
+    height: 15px;
+    color: rgb(101, 101, 101);
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+  .cart-item__close {
+    position: absolute;
+    padding-right: 5px;
+    top: 17px;
+    right: 22px;
+    width: 9px;
+    height: 11px;
+  }
+  .cart-item__close:hover path {
+    fill: #EF5B70;
   }
   .frame7 {
     display: flex;
