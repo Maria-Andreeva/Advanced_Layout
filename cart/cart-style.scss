@@ -595,21 +595,6 @@ overflow-x: hidden;
             padding-left: 17px;
             padding-right: 17px; 
         }
-        
-        &__button {
-            border: 1px solid #A4A4A4;
-            padding: 12px 16px;
-            font-weight: 300;
-            font-size: 11px;
-            line-height: 13px;
-            color: #4A4A4A;
-            background-color: #fff;
-            width: 110px;
-            &:hover {
-                color: white;
-                background-color: #A4A4A4;
-            }
-        }
     
         &__buttons {
             display: flex;
@@ -628,22 +613,6 @@ overflow-x: hidden;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
-            }
-            &_btn {
-                background: rgb(241, 109, 127);
-                color: rgb(255, 255, 255);
-                width: 273px;
-                height: 50px;
-                margin: 17px 44px 42px 43px;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                border: none;
-                &:hover {
-                    color: rgb(241, 109, 127);
-                    background-color: white;
-                }
             }
 
         }
