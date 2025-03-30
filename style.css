@@ -499,12 +499,17 @@ body.menu-open {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .mobile-img-acess {
-    display: none;
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .center {
-    padding-left: calc(50% - 512px);
-    padding-right: calc(50% - 512px);
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .header {
     height: 74px;
@@ -516,14 +521,17 @@ body.menu-open {
     gap: 32px;
     padding-bottom: 18px;
     padding-top: 27px;
+    padding-right: 5px;
   }
   .header__logo {
     padding-bottom: 18px;
   }
+  .top {
+    margin-bottom: 19px;
+  }
   .top__block {
     display: grid;
     grid-template-columns: repeat(2, 383px);
-    margin-bottom: 64px;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -545,13 +553,8 @@ body.menu-open {
   .top__subheading {
     font-size: 24px;
   }
-  .fashion {
+  .top__subheading_fashion {
     font-size: 24px;
-  }
-  .container {
-    width: 736px;
-    padding-left: calc(50% - 368px);
-    padding-right: calc(50% - 368px);
   }
   .top__images {
     display: grid;
@@ -570,14 +573,14 @@ body.menu-open {
     gap: 16px;
     margin-bottom: 32px;
   }
-  .heading__items {
+  .content__item_heading {
     margin: 25px 193px 12px 18px;
   }
-  .text__items {
+  .content__item_text {
     margin-bottom: 18px;
     margin-right: 29px;
   }
-  .price__items {
+  .content__item_price {
     margin-bottom: 20px;
     margin-left: 18px;
   }
@@ -598,6 +601,16 @@ body.menu-open {
     align-items: center;
     padding-bottom: 54px;
   }
+  .subscribe {
+    height: 137px;
+    width: 557px;
+    padding-top: 24px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   .subscribe__info {
     padding-top: 64px;
     padding-bottom: 24px;
@@ -608,16 +621,6 @@ body.menu-open {
   }
   .subscribe__info img {
     padding-left: 0;
-  }
-  .subscribe {
-    height: 137px;
-    width: 557px;
-    padding-top: 24px;
-    padding-bottom: 140px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
   }
   .subscribe__text {
     margin-top: 0;
