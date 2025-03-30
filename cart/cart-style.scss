@@ -680,8 +680,8 @@ overflow-x: hidden;
             padding-bottom: 24px;
         }
     }
-  }
-  @media (max-width: 767px) {
+}
+@media (max-width: 767px) {
     body, .container {
         overflow-x: hidden;
     }
@@ -927,5 +927,5 @@ overflow-x: hidden;
               order: 1;
           }
     }
-  }
+}
   
