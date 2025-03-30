@@ -12,6 +12,7 @@
 
 </head>
 <body>
+    <div class="container">
 
     <div class="box-content">
         <header class="header center">
@@ -65,10 +66,10 @@
    </div>
 
 
-    <div class="breadcrumb center">
+    <div class="breadcrumb container center">
         <h2 class="breadcrumb__heading">SHOPPING CART</h2>
     </div>
-    <div class="cart center">
+    <div class="cart container center">
         <div class="cart__content">
             <div class="cart-item">
                 <img src="../img/content3.jpg" alt="product 1" class="cart-item__photo">
@@ -109,7 +110,7 @@
                 <button class="cart__buttons_btn">CONTINUE SHOPPING</button>
             </div>
         </div>
-        <div class="cart__info">
+        <div class="cart__info center container">
             <div class="cart__address">
                 <h2 class="cart__heading">SHIPPING ADRESS</h2>
                 <form action="#" class="cart__form">
@@ -121,12 +122,13 @@
             </div>
             <div class="cart__total">
                 <div class="cart__total_info">
-                    <p class="cart__subtotal">SUB TOTAL         $900</h2>
+                    <p class="cart__subtotal">SUB TOTAL  $900</h2>
                     <p class="cart__grandtotal">GRAND TOTAL <span class="cart__grandtotal_price">$900</span></p>
-                    <svg width="275.000000" height="1.000000" viewBox="0 0 275 1" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg class="cart__vector" width="275.000000" height="1.000000" viewBox="0 0 275 1" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs/>
                         <path id="Shape 8" d="M0 0L275 0L275 1L0 1L0 0Z" fill="#E2E2E2" fill-opacity="1.000000" fill-rule="evenodd"/>
                     </svg>
+                    
                 </div>
                 <button class="cart__total_btn">PROCEED TO CHECKOUT</button>            
             </div>
@@ -134,9 +136,9 @@
     </div>
 
 
-    <section class="frame7 center">
-        <div class="subscribe__info">
-          <img src="../img/expert.png" alt="" />
+    <div class="frame7 center container">
+        <div class="subscribe__info center">
+          <img src="../img/expert.png" alt="expert" />
           <div class="subscribe__text">
             “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
           </div>
@@ -151,9 +153,9 @@
           <button class="subscribe__button_left">Subscribe</button>
         </div>
         </div>
-      </section>
+      </div>
         
-      <footer class="copyright center">
+      <footer class="copyright center container">
         <div class="copyright__left">© 2023 Brand All Rights Reserved.</div>
         <nav class="copyright__right">
           <div class="social__icon">
@@ -164,7 +166,13 @@
           </div>
         </nav>
       </footer>
+    </div>
     
-
+      <script>
+        document.getElementById('check').addEventListener('change', function() {
+          document.body.classList.toggle('menu-open', this.checked);
+      });
+      
+      </script>
 </body>
 </html>
