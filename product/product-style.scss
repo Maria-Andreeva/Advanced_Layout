@@ -18,6 +18,15 @@ a {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
 }
+
+.container {
+    width: 100%; /* Ширина контейнера на 100% */
+    max-width: 100%; /* Убедитесь, что контейнер не превышает ширину экрана */
+    box-sizing: border-box; /* Учитываем паддинги и бордеры */
+    overflow-x: hidden; /* Отключаем горизонтальный скролл */
+    padding: 0; /* Паддинги для отступов (можно регулировать) */
+    margin: 0 auto; /* Выравнивание по центру */
+}
   
 .box-content {
     overflow: hidden;
@@ -75,7 +84,11 @@ a {
     padding: 32px;
     box-sizing: border-box;
     top: 75px;
-    right: 0;
+    
+    /*right: 0;*/
+    right: 100%;
+
+    
     transition: right .3s;
     z-index: 2;
     &__heading {
@@ -123,7 +136,8 @@ a {
     visibility: hidden;
     
     &:checked ~ .mobile-menu{
-      right: -$widthBurgerMenu;
+      /*right: -$widthBurgerMenu;*/
+      right: 0px;
     }
   }
 
