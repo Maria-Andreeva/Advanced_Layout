@@ -479,7 +479,8 @@ body.menu-open {
   display: flex;
   height: 32px;
   width: 148px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 8px;
 }
 
 .social__icon {
@@ -491,9 +492,11 @@ body.menu-open {
   width: 32px;
   background-color: #FFFFFF;
 }
+
 .social__icon:hover {
   background-color: rgb(241, 109, 127);
 }
+
 .social__icon img:hover {
   filter: invert(100%);
 }
@@ -638,10 +641,28 @@ body.menu-open {
     padding-bottom: 24px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+  }
+  .desktop-img-acess {
+    display: none;
+  }
+  .mobile-img-acess {
+    display: block;
+    grid-column: span 1;
   }
   .header {
     height: 74px;
@@ -657,12 +678,12 @@ body.menu-open {
   .header__img_basket {
     display: none;
   }
-  .five {
-    display: none;
-  }
   .header__img_menu {
     padding-bottom: 26px;
     padding-top: 25px;
+  }
+  .header__right_five {
+    display: none;
   }
   .header__logo {
     padding-bottom: 18px;
@@ -697,26 +718,14 @@ body.menu-open {
     margin-left: 15px;
     text-align: center;
   }
-  .fashion {
+  .top__subheading_fashion {
     font-size: 20px;
-  }
-  .container {
-    width: 375px;
-    padding-left: calc(50% - 187px);
-    padding-right: calc(50% - 187px);
   }
   .top__images {
     display: grid;
     grid-template-columns: repeat(1, 343px);
     gap: 32px;
     margin-bottom: 64px;
-  }
-  .desktop-img-acess {
-    display: none;
-  }
-  .mobile-img-acess {
-    display: block;
-    grid-column: span 1;
   }
   .content__description {
     margin-bottom: 64px;
@@ -727,14 +736,14 @@ body.menu-open {
     gap: 16px;
     margin-bottom: 40px;
   }
-  .heading__items {
+  .content__item_heading {
     margin-bottom: 12px;
     margin-left: 18px;
   }
-  .text__items {
+  .content__item_text {
     margin-bottom: 18px;
   }
-  .price__items {
+  .content__item_price {
     margin-bottom: 20px;
     margin-left: 19px;
   }
@@ -749,17 +758,17 @@ body.menu-open {
     align-items: center;
     height: 550px;
   }
-  .subscribe__info {
-    height: 194px;
-    width: 343px;
-    padding-top: 64px;
-    padding-bottom: 30px;
-  }
   .subscribe {
     height: 123px;
     width: 341px;
     padding-top: 30px;
     padding-bottom: 109px;
+  }
+  .subscribe__info {
+    height: 194px;
+    width: 343px;
+    padding-top: 64px;
+    padding-bottom: 30px;
   }
   .subscribe__text_right {
     height: 54px;
