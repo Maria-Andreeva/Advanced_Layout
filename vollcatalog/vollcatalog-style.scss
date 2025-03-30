@@ -743,6 +743,9 @@ body.menu-open {
   }
 }
 @media (max-width: 767px) {
+  .box-content {
+    overflow: hidden;
+}
 
   .center {
       max-width: 100%;
